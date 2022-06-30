@@ -32,3 +32,20 @@ The documentation is divided into several sections:
 
 You can improve it by sending pull requests to [this repository]().
 
+# Examples
+We have several  examples [on the website]().Here is the first one to get you to started: 
+
+```js
+import {createRoot} from 'react-dom/client';
+
+function HelloMessages({ name }) {
+    return <div>Hello{name}</div>;
+    }
+
+const root = createRoot(document.getElementById('container'));
+root.render(HelloMessage name="Taylor"/>);
+```
+
+This example will render "Hello Taylor"into a container on the page.
+
+You'll notice that we used an HTML-like syntax;we call it JSX.JSX is not required wo use React,but it makes code more readable and writing it feels like writing HTML.If you're using React as a < script > tag,read the section on integrating JSX;otherwise,the recommended JavaScript toolchains handle it automatically. 
